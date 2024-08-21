@@ -1,11 +1,13 @@
 def NEWBILL():
     global o
+    t=0
     while True:
         print("Enter name name of Dish to order, Enter 1 to end order")
         k=str(input("Enter Dish:"))
         if k.lower() in s:
             q=int(input("Enter Quantity:"))
             o[k]=[s[k],q]
+            t=+s[k]*q
         elif k==1:
             break
         else:
@@ -14,7 +16,7 @@ def NEWBILL():
     P=str(input("Enter customer Phone Number:"))
     m=str(input("Enter Payment method:"))
     global d
-    d={"Name":N,"Phone Number":P,"Payment Method":m}
+    d={"Name":N,"Phone Number":P,"Payment Method":m,"Total":t}
 d={}
 s={}
 o={}

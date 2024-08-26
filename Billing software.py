@@ -1,4 +1,5 @@
 def NEWBILL():
+    global d
     global o
     o={}
     d={}
@@ -17,7 +18,6 @@ def NEWBILL():
             break
         else:
             print("Dish not Found")
-    global d
     d={"Name":N,"Phone Number":P,"Payment Method":m,"Total":t}
 d={}
 s={"cake":70, "Juice":30, "Milkshake":60, "Rice":80, "Dal":110, "Snack":20}
@@ -44,3 +44,16 @@ def MENU():
         elif l==3:
             print(s)
             break
+while True:
+    print("Enter 1 to order \n Enter 2 change menu \n Enter 3 to print Bill \nEnter 4 to Quit")
+    j=int(input("Enter:"))
+    if j==1:
+        NEWBILL()
+    elif j==2:
+        MENU()
+    elif j==3:
+        print("Print system not setup")
+    elif j==4:
+        break
+    else:
+        print("Wrong input try again")

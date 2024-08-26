@@ -1,6 +1,11 @@
 def NEWBILL():
     global o
+    o={}
+    d={}
     t=0
+    N=str(input("Enter customer Name:"))
+    P=str(input("Enter customer Phone Number:"))
+    m=str(input("Enter Payment method:"))
     while True:
         print("Enter name name of Dish to order, Enter 1 to end order")
         k=str(input("Enter Dish:"))
@@ -12,13 +17,10 @@ def NEWBILL():
             break
         else:
             print("Dish not Found")
-    N=str(input("Enter customer Name:"))
-    P=str(input("Enter customer Phone Number:"))
-    m=str(input("Enter Payment method:"))
     global d
     d={"Name":N,"Phone Number":P,"Payment Method":m,"Total":t}
 d={}
-s={}
+s={"cake":70, "Juice":30, "Milkshake":60, "Rice":80, "Dal":110, "Snack":20}
 o={}
 def MENU():
     global s

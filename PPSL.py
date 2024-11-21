@@ -27,4 +27,3 @@ def expt9a():
         if i.upper() in ["A","E","I","O","U"]:
             count=count+1
     print(count)
-print("Hello")
